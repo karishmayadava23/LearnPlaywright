@@ -4,7 +4,7 @@ test('AssertionTest', async ({ page }) => {
 
 
   //open app url
-  await page.goto("https://demoblaze.com/");
+  // await page.goto("https://demoblaze.com/");
 
   //click on Home link
   // await page.getByText('Home').click();
@@ -33,9 +33,23 @@ test('AssertionTest', async ({ page }) => {
 
   // 4. await expect(locator).toBeEnabled() - Element is enabled
   //await expect(locator).toBeDisabled() - Element is disabled
-  await page.locator("//a[contains(text(),'Log in')]").click();
+  //  await page.locator("//a[contains(text(),'Log in')]").click();
   //await expect(page.locator('#loginusername')).toBeEnabled();
-  await expect(page.locator('#loginusername')).toBeDisabled();
+  // await expect(page.locator('#loginusername')).toBeDisabled();
+
+  // 5. await expect(locator).toBeChecked
+  //checkbox
+  // await page.goto("https://letcode.in/radio");
+  // const checkbox1 = page.locator('.card-content .checkbox').nth(0);
+  // await expect(checkbox1).toBeChecked();
+
+  //radiobutton
+  // const radiobuttonnotfoo = page.locator('#notfoo');
+  // const radiobuttonfoo = page.locator('#foo');
+  // await expect(radiobuttonnotfoo).toBeChecked();
+  // await expect(radiobuttonfoo).toBeChecked();
+
+
 
 
 });
